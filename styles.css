@@ -1,0 +1,112 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8f8f8;
+}
+
+/* Header Styles */
+.header {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+
+.header p {
+    font-size: 1.2em;
+}
+
+/* Order and Billing Sections */
+.order-section, .order-summary, .billing-section, .confirmation-section {
+    width: 80%;
+    max-width: 600px;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.order-section h2, .order-summary h2, .billing-section h2, .confirmation-section h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.order-item, .order-summary p, .confirmation-section p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+.order-item label, .order-item input {
+    font-size: 1em;
+}
+
+.order-item input {
+    width: 60px;
+    padding: 5px;
+    font-size: 1em;
+    text-align: center;
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.2em;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Billing Form */
+.billing-section label, .billing-section input {
+    font-size: 1em;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.billing-section input {
+    width: 100%;
+    padding: 8px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Order Summary and Confirmation */
+.order-summary, .confirmation-section {
+    font-size: 1.2em;
+    text-align: left;
+}
+
+.order-summary strong, .confirmation-section strong {
+    font-size: 1.3em;
+    color: #333;
+    display: block;
+    margin-top: 10px;
+}
